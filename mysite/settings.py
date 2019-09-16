@@ -1,6 +1,6 @@
-from django.conf import settings
-from django.conf.urls.static import static
-
+# from django.conf import settings
+# from django.conf.urls.static import static
+from decouple import config, Csv
 """
 Django settings for mysite project.
 
@@ -23,12 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'nj8hv()jng#97cfp41(wmcstdqqleo3+wf$6d+879*hab@rk^@'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Application definition
