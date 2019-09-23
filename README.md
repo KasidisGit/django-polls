@@ -3,21 +3,21 @@ By Kasidis Luangwutiwong
 
 ## Django Polls Application
 
-Web Application from the Django Introduction 
+Web Application from the Django Introduction
 -> [Source](https://docs.djangoproject.com/en/2.2/intro/)
 
 ## Requirements
 
 This Project Requires:
-* Python 3.6 or newer
+* Python 3.6 or newer<br />
 Install Python -> [Source](https://www.python.org/downloads/)
 
-* Django 2.1.2 or newer
-Install Django: 
-    On macOS:
-        -> Open Terminal
-        -> Type pip(or pip3) install django
-    On Windows:
+* Django 2.1.2 or newer<br />
+Install Django: <br />
+    On macOS:<br />
+        -> Open Terminal<br />
+        -> Type pip(or pip3) install django<br />
+    On Windows:<br />
         Go to -> [Source](https://docs.djangoproject.com/en/2.2/howto/windows/)
         
 * Python add-on modules as in [requirements.txt](requirements.txt)
@@ -27,7 +27,7 @@ Install Django:
 
 ## How to Server
 
--> Go to mysite
--> Open Terminal
+-> Go to mysite<br />
+-> Open Terminal<br />
 -> Type python(or python3) manage.py runserver
 
