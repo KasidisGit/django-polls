@@ -9,7 +9,6 @@ db.sqlite3
 media
 
 # Byte-compiled / optimized / DLL files
-__pycache__/
 *.py[cod]
 *$py.class
 
@@ -112,3 +111,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+.DS_Store
