@@ -44,6 +44,3 @@ def vote(request, question_id):
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
-def index(request):
-    # redirect user to the polls index
-    return HttpResponseRedirect(reverse('polls:index'))
