@@ -1,0 +1,25 @@
+<html>
+    <title>Polls app</title>
+    <body>
+        {% if user.is_authenticated %}
+        Wellcome back,
+            {% if user.first_name != '' %}
+                {{ user.first_name}}
+            {% else %}
+                {{ user.username.title }}
+            {% endif %}
+            <a href="{% url 'logout' %}">logout</a> 
+        {% else %}
+            <h1>Please <a href="{% url 'login'%}">login</a> to vote for a topic.</h1>
+        {% endif %}
+        {% if latest_question_list %}
+            <ul>
+            {% for question in latest_question_list %}
+                <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <h1>No polls are available.</h1>
+        {% endif %}
+    </body>
+</html>
